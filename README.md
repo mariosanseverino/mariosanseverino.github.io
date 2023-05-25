@@ -1,3 +1,1 @@
-# mariosanseverino.github.io
-
-Starting my new project!
+// Starting my new portfolio!

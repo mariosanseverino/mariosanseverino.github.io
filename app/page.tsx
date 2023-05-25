@@ -1,5 +1,16 @@
+import React from "react"
+import Footer from "./components/Footer"
+import Header from "./components/Header"
+import './styles/styles.css'
+
 export default function Home() {
     return(
-        <h1>Hello, World!</h1>
+        <>
+            <Header />
+            <main className="main-content">
+                Home Page
+            </main>
+            <Footer />
+        </>
     )
 }

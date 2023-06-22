@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface DrawingDetails {
+type DrawingDetails = {
     id: number;
     imageName: string;
     description: string;

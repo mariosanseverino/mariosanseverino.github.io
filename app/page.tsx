@@ -8,7 +8,6 @@ export default function Home() {
 		<div className='h-screen flex-col min-h-full'>
 			<Header />
 			<main className='w-full text-center'>
-
 				<p className='mx-auto'>Home Page</p>
 			</main>
 			<Footer />

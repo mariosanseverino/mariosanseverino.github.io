@@ -1,8 +1,12 @@
 'use client';
 import { useTheme } from 'next-themes';
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-export default function ThemeSwitcher() {
+export type Props = {
+	children: ReactNode,
+}
+
+export default function ThemeSwitcher({ children } : Props) {
 	const { theme, setTheme } = useTheme();
 
 	function switchTheme(): void {
@@ -10,11 +14,8 @@ export default function ThemeSwitcher() {
 	}
 
 	return (
-		<div className='my-4'>
-			<p>The current theme is {theme}</p>
-			<button onClick={switchTheme} className='my-2'>
-				Switch
-			</button>
-		</div>
+		<button onClick={switchTheme} className='my-2'>
+			{ children }
+		</button>
 	);
 }

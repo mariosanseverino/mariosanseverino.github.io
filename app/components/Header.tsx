@@ -1,21 +1,34 @@
+'use client';
 import React from 'react';
 import Link from 'next/link';
-import '../styles/reset.css';
-import '../styles/styles.css';
+import ThemeSwitcher from './ThemeSwitcher';
+import { useTheme } from 'next-themes';
 
 export default function Header() {
 	const navMenu = ['Home','Drawings','Projects','Contact','About'];
+	const { theme } = useTheme();
+	
+	function switchLogo() {
+		return theme === 'dark' ? './images/central-flames.png' : './images/central-flames-dark.png';
+	}
+
 	return(
 		<>
-			<header>
-				<figure className="logo-area">
-					<img src="images/logo.png" alt="Brand logo" id="logo-img"></img>
+			<header className='block box-border my-6'>
+				<figure className='w-full text-center'>
+					<img
+						className='w-[10rem] rounded-full mx-auto'
+						src={ switchLogo() }
+						alt="Brand logo"
+						id="logo-img"
+					></img>
+					<ThemeSwitcher />
 				</figure>
 				<nav>
-					<ul className="nav-bar">
+					<ul className='w-full text-center'>
 						{navMenu.map((menuItem, index) => (
 							<Link
-								className='nav-item'
+								className='inline-block font-semibold p-2'
 								href={ index > 0 ? `/${menuItem.toLowerCase()}` : '/' }
 								key={index}
 							>

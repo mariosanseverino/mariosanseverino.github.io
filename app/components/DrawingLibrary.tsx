@@ -4,7 +4,7 @@ import DrawingCard from './DrawingCard';
 
 export default function DrawingLibrary() {
 	return(
-		<>
+		<div className='grid-rows-3 w-full'>
 			{drawingsArray.map((drawing) => (
 				<DrawingCard
 					key={drawing.id}
@@ -13,7 +13,7 @@ export default function DrawingLibrary() {
 					description={drawing.description}
 				/>
 			))}
-		</>
+		</div>
 	);
 }
 

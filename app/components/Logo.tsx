@@ -14,7 +14,7 @@ export default function Logo() {
 		<ThemeSwitcher>
 			<figure className='w-full text-center'>
 				<img
-					className='w-[10rem] rounded-full mx-auto'
+					className='w-[10rem] rounded-full mx-auto transition-transform hover:scale-95'
 					src={ switchLogo() }
 					alt="Brand logo"
 					id="logo-img"

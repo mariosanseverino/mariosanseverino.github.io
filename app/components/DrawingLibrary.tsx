@@ -4,7 +4,7 @@ import DrawingCard from './DrawingCard';
 
 export default function DrawingLibrary() {
 	return(
-		<div className='grid-rows-3 w-full'>
+		<div className='flex flex-row flex-wrap max-w-3xl mx-auto'>
 			{drawingsArray.map((drawing) => (
 				<DrawingCard
 					key={drawing.id}

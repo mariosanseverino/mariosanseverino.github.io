@@ -1,4 +1,6 @@
 import React from 'react';
+import Providers from './Providers';
+import './styles/global.css';
 
 export const metadata = {
 	title: 'Mario\'s Portfolio',
@@ -12,7 +14,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<Providers>
+				<body>{children}</body>
+			</Providers>
 		</html>
 	);
 }

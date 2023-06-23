@@ -12,7 +12,7 @@ export default function DrawingCard(drawingDetails: DrawingDetails) {
 	return(
 		<figure key={id}>
 			<img
-				className='drawing-small'
+				className='mr-1 ml-1'
 				src={ `images/${imageName}.png` }
 				id={imageName}
 			/>

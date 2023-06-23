@@ -1,10 +1,9 @@
 import React from 'react';
-import '../styles/styles.css';
 
 export default function Footer() {
 	return(
-		<footer>
-			<p className="footer-credits">&copy All content and website development made by Mário Sanseverino.</p>
+		<footer className='mt-auto mb-6 h-6 w-full text-center'>
+			<p className='mx-auto'>&copy All content and website development made by Mário Sanseverino.</p>
 		</footer>
 	);
 }

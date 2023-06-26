@@ -1,34 +1,23 @@
-import React, { useState } from 'react';
+'use client';
+import React from 'react';
 
 type DrawingDetails = {
     id: number;
     imageName: string;
     description: string;
-  }
+}
 
-export default function DrawingCard(drawingDetails: DrawingDetails) {
+export default function DrawingCard(drawingDetails: DrawingDetails): React.JSX.Element {
 	const { id, imageName } = drawingDetails;
-	const [popUp, setPopUp] = useState(true);
-
-	function switchPopUp() {
-		popUp === true ? setPopUp(false) : setPopUp(true);
-	}
 
 	return(
 		<>
-			<figure key={id} className='text-center mb-4 w-60 mx-2'>
+			<figure key={ id } className='text-center mb-4 w-60 mx-2'>
 				<img
-					className='object-contain opacity-10 hover:transition hover:opacity-100 ease-in-out'
+					className='object-contain opacity-10 hover:transition duration-500 ease-in-out hover:opacity-100'
 					src={ `images/${imageName}.png` }
-					id={imageName}
-					onClick={ switchPopUp }
+					id={ imageName }
 				/>
-			</figure>
-			<figure
-				className='absolute opacity-100 bg-black'
-				hidden={ popUp }
-			>
-				<img src={ `images/${imageName}.png` } className='w-90' onClick={ switchPopUp } />
 			</figure>
 		</>
 	);

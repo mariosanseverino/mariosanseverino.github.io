@@ -1,21 +1,34 @@
 import React from 'react';
 import { drawingsArray } from '../../public/images/drawingsList';
 import DrawingCard from './DrawingCard';
+import { useDrawingsContext } from '../Providers';
+import { DrawingZoom } from './DrawingZoom';
 
 export default function DrawingLibrary() {
+	const { setDrawingName, zoomHidden, setZoomHidden } = useDrawingsContext();
+
+	function selectDrawing(drawingName : string) : void {
+		setDrawingName(drawingName);
+		setZoomHidden(true);
+	}
+
 	return(
 		<>
+			{ zoomHidden === true ? <DrawingZoom /> : '' }
 			<div className='flex flex-row flex-wrap max-w-3xl mx-auto'>
 				{drawingsArray.map((drawing) => (
-					<DrawingCard
+					<button
 						key={drawing.id}
-						id={drawing.id}
-						imageName={drawing.imageName}
-						description={drawing.description}
-					/>
+						onClick={ () => selectDrawing(drawing.imageName) }
+					>
+						<DrawingCard
+							id={drawing.id}
+							imageName={drawing.imageName}
+							description={drawing.description}
+						/>
+					</button>
 				))}
 			</div>
 		</>
 	);
 }
-

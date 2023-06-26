@@ -1,5 +1,6 @@
 import React from 'react';
 import Providers from './Providers';
+import './styles/reset.css';
 import './styles/global.css';
 
 export const metadata = {

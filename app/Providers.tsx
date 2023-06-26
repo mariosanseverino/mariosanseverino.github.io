@@ -1,8 +1,8 @@
 'use client';
 import React, {
 	createContext,
-	useState,
 	useContext,
+	useState,
 	Dispatch,
 	SetStateAction
 } from 'react';
@@ -23,14 +23,14 @@ export const DrawingsContext = createContext({
 export default function DrawingsProvider({ children } : Props) {
 	const [drawingName, setDrawingName] = useState('');
 	const [zoomHidden, setZoomHidden] = useState(false);
-
+	
 	const drawingZoomSettings = {
 		drawingName,
 		zoomHidden,
 		setDrawingName,
 		setZoomHidden,
 	};
-
+	
 	return (
 		<DrawingsContext.Provider value={ drawingZoomSettings }>
 			<ThemeProvider themes={['dark', 'light']} attribute='class'>

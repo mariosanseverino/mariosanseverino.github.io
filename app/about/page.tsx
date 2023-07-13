@@ -27,7 +27,7 @@ export default function About() {
                     There he studied English for IELTS at the MIT Institute, before joining the Warwick Institute of Australia, in the Website Development course.
                     Moved by his italian background, based on past generations of his family, in 2021, Mário did the Italian Essentials online course, by Italica.
                     Subject in which he is still learning through reading, movies and Duolingo.
-                    Now, studying at Trybe to challenge himself and kickoff his career as a front-end developer, focused on NextJS, TypeScript, JavaScript.
+                    Graduated in Web Development at Trybe to start his career as a front-end developer, focused on technologies such as HTML, CSS, NextJS and TypeScript.
 				</p>    
 			</section>
 			<Footer />

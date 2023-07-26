@@ -6,12 +6,16 @@ module.exports = {
 		'./app/**/*.{js,jsx,ts,tsx}'
 	],
 	theme: {
-		extend: {},
+		extend: {
+			dropShadow: {
+				'md': '0 5px rgba(50, 50, 50, 0.9)'
+			}
+		},
 		colors: {
 			'black': '#141414',
 			'white': '#C8C8C8',
-			'HTML': '#FB923C',
-			'CSS': '#0EA5E9',
+			'HTML5': '#FB923C',
+			'CSS3': '#0EA5E9',
 			'JavaScript': '#FACC14'
 		}
 	},

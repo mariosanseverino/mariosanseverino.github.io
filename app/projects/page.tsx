@@ -10,7 +10,7 @@ export default function Projects() {
 		<>
 			<Header />
 			<section>
-				{ projectsList.map((project: IProject, index: number) => (
+				{ projectsList().map((project: IProject, index: number) => (
 					<ProjectCard
 						key={ index }
 						title={ project.title }

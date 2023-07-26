@@ -6,11 +6,12 @@ import { IProject, projectsList } from './projects-list';
 import ProjectCard from '../components/ProjectCard';
 
 export default function Projects() {
+	const allProjects = projectsList();
 	return (
 		<>
 			<Header />
 			<section>
-				{ projectsList().map((project: IProject, index: number) => (
+				{ allProjects.map((project: IProject, index: number) => (
 					<ProjectCard
 						key={ index }
 						title={ project.title }

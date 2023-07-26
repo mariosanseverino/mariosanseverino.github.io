@@ -15,7 +15,7 @@ export default function ProjectCard(project: IProject) {
 				{ project.stack.map((stack, index) => (
 					<span
 						key={ index }
-						className={ `text-black border bg-${stack} p-1 mx-1 text-sm font-medium` }
+						className={ `text-black border bg-${ stack } p-1 mx-1 text-sm font-medium` }
 					>
 						{ stack }
 					</span>

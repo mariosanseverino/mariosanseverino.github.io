@@ -9,7 +9,10 @@ module.exports = {
 		extend: {},
 		colors: {
 			'black': '#141414',
-			'white': '#c8c8c8',
+			'white': '#C8C8C8',
+			'HTML': '#FB923C',
+			'CSS': '#0EA5E9',
+			'JavaScript': '#FACC14'
 		}
 	},
 	plugins: [],

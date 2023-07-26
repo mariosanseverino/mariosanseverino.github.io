@@ -5,7 +5,7 @@ import Logo from './Logo';
 
 export default function Header() {
 	const navMenu = ['Drawings','Projects','About'];
-	return(
+	return (
 		<>
 			<header className='block box-border my-6 text-center'>
 				<Logo />

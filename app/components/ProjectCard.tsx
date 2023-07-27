@@ -6,6 +6,7 @@ import { IProject } from '../projects/projects-list';
 
 export default function ProjectCard(project: IProject) {
 	const { theme } = useTheme();
+	const projectStackClass = (stackName: string) => `text-black border bg-${ stackName } p-1 mx-1 text-sm font-medium`;
 
 	return (
 		<div className={ `w-96 mb-6 mx-auto justify-center pb-4 text-center bg-black text-white rounded-lg ${ theme === 'dark' ? 'drop-shadow-md' : '' }` }>
@@ -15,7 +16,7 @@ export default function ProjectCard(project: IProject) {
 				{ project.stack.map((stack, index) => (
 					<span
 						key={ index }
-						className={ `text-black border bg-${ stack } p-1 mx-1 text-sm font-medium` }
+						className={ projectStackClass(stack) }
 					>
 						{ stack }
 					</span>

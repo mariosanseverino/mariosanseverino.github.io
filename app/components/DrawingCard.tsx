@@ -12,9 +12,9 @@ export default function DrawingCard(drawingDetails: DrawingDetails): React.JSX.E
 
 	return(
 		<>
-			<figure key={ id } className='text-center mb-4 w-60 mx-2'>
+			<figure key={ id } className='text-center mb-4 mx-2'>
 				<img
-					className='object-contain opacity-10 hover:transition duration-500 ease-in-out hover:opacity-100'
+					className='w-80 rounded-lg opacity-10 hover:transition duration-500 ease-in-out hover:opacity-100'
 					src={ `images/${imageName}.png` }
 					id={ imageName }
 				/>

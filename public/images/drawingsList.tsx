@@ -6,8 +6,8 @@ export const drawingsArray = [
 	},
 	{
 		id: 1,
-		imageName: 'central-flames',
-		description: 'Central Flames'
+		imageName: 'side-flames',
+		description: 'Side Flames'
 	},
 	{
 		id: 2,
@@ -88,5 +88,40 @@ export const drawingsArray = [
 		id: 17,
 		imageName: 'ritual',
 		description: 'Ritual'
-	}
+	},
+	{
+		id: 18,
+		imageName: 'cloak',
+		description: 'Cloak'
+	},
+	{
+		id: 19,
+		imageName: 'crown',
+		description: 'Crown'
+	},
+	{
+		id: 20,
+		imageName: 'moneybag',
+		description: 'Moneybag'
+	},
+	{
+		id: 21,
+		imageName: 'rose',
+		description: 'Rose'
+	},
+	{
+		id: 22,
+		imageName: 'umbrella',
+		description: 'umbrella'
+	},
+	{
+		id: 23,
+		imageName: 'webwoman',
+		description: 'Webwoman'
+	},
+	{
+		id: 24,
+		imageName: 'bird-of-paradise',
+		description: 'Bird of Paradise'
+	},
 ];

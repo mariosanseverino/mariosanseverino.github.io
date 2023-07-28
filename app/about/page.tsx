@@ -7,18 +7,18 @@ export default function About() {
 	return(
 		<>
 			<Header />
-			<section className='text-center'>
-				<figure className='mt-4'>
+			<section className='text-center w-80 mx-auto md:flex md:row md:w-full md:justify-center md:mx-auto'>
+				<figure className='mt-4 md:mt-0 md:mr-8'>
 					<img
 						src='images/author.jpg'
 						alt='Mario wearing a Whitney Houston T-shirt in a lavender light background'
-						className='w-96 mx-auto'
+						className='w-80 mx-auto rounded-t-lg md:w-96'
 					/>
-					<figcaption className='my-4'>
+					<figcaption className='mb-4 bg-black text-white py-2'>
                         Mário Augusto Martins Sanseverino
 					</figcaption>
 				</figure>
-				<p className='w-96 text-justify mx-auto'>
+				<p className='w-80 text-justify mx-auto md:w-96 md:text-left md:mx-0 md:text-base md:my-3'>
                     Mário was born on May 25th of 1993, in Porto Alegre/BRA. Has a warmth connection to arts, despite beign a logical problem solver and a technology lover.
                     Feels happy when healthy and enjoys his free time having fun skateboarding, playing videogames and meeting his friends for a drink.
                     Graduated with a bachelor&apos;s degree in Business Management in 2018.

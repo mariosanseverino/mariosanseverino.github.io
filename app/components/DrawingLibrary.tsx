@@ -15,7 +15,7 @@ export default function DrawingLibrary() {
 	return(
 		<>
 			{ zoomHidden === true ? <DrawingZoom /> : '' }
-			<div className='flex flex-row flex-wrap max-w-3xl mx-auto'>
+			<div className='flex flex-row flex-wrap mx-auto justify-center'>
 				{drawingsArray.map((drawing) => (
 					<button
 						key={drawing.id}

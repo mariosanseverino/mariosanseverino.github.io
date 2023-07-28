@@ -10,7 +10,7 @@ export default function Projects() {
 	return (
 		<>
 			<Header />
-			<section>
+			<section className='md:w-full md:flex md:justify-center md:mx-auto'>
 				{ allProjects.map((project: IProject, index: number) => (
 					<ProjectCard
 						key={ index }

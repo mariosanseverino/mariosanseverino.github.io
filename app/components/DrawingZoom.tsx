@@ -15,7 +15,7 @@ export function DrawingZoom() {
 			}
 		>
 			<img
-				className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mx-auto my-auto w-2/5'
+				className='w-fit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mx-auto my-auto'
 				src={ `images/${drawingName}.png` }
 				onClick={ () => setZoomHidden(false) }
 			/>

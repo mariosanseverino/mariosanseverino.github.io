@@ -9,13 +9,13 @@ export default function ProjectCard(project: IProject) {
 	function projectClassName (stackName: string): string {
 		switch (stackName) {
 		case 'HTML5':
-			return 'text-black border bg-HTML5 p-1 mx-1 text-sm font-medium';
+			return 'bg-HTML5';
 		case 'CSS3':
-			return 'text-black border bg-CSS3 p-1 mx-1 text-sm font-medium';
+			return 'bg-CSS3';
 		case 'JavaScript':
-			return 'text-black border bg-JavaScript p-1 mx-1 text-sm font-medium';
+			return 'bg-JavaScript';
 		default:
-			return 'text-black border bg-black p-1 mx-1 text-sm font-medium';
+			return 'bg-black';
 		}
 	}
 
@@ -33,7 +33,7 @@ export default function ProjectCard(project: IProject) {
 			{ project.stack.map((stack, index) => (
 				<span
 					key={ index }
-					className={ projectClassName(stack) }
+					className={ `${projectClassName(stack)} text-black border p-1 mx-1 text-sm font-medium` }
 				>
 					{ stack }
 				</span>

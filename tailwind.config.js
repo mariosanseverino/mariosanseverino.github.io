@@ -7,13 +7,11 @@ module.exports = {
 	],
 	theme: {
 		extend: {
-			dropShadow: {
-				'md': '0 5px rgba(50, 50, 50, 0.9)'
-			}
 		},
 		colors: {
 			'black': '#141414',
 			'white': '#C8C8C8',
+			'gray': '#323232',
 			'HTML5': '#EF4444',
 			'CSS3': '#0EA5E9',
 			'JavaScript': '#FACC14'

@@ -7,7 +7,7 @@ export default function Logo() {
 	const { theme } = useTheme();
 	
 	function switchLogo() {
-		return theme === 'dark' ? './images/central-flames.png' : './images/central-flames-dark.png';
+		return theme === 'dark' ? './images/drawings/central-flames.png' : './images/drawings/central-flames-dark.png';
 	}
 
 	return (

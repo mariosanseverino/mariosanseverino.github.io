@@ -1,5 +1,7 @@
 import React from 'react';
 import Providers from './Providers';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import './styles/reset.css';
 import './styles/global.css';
 
@@ -16,7 +18,11 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<Providers>
-				<body>{children}</body>
+				<body>
+					<Header />
+					{children}
+					<Footer />
+				</body>
 			</Providers>
 		</html>
 	);

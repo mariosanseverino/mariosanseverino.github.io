@@ -1,12 +1,9 @@
 'use client';
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 export default function About() {
 	return(
 		<>
-			<Header />
 			<section className='text-center w-80 mx-auto lg:flex lg:row lg:w-full lg:justify-center lg:mx-auto'>
 				<figure className='mt-4 lg:mt-0 lg:mr-8'>
 					<img
@@ -30,7 +27,6 @@ export default function About() {
                     Graduated in Web Development at Trybe to start his career as a front-end developer, focused on technologies such as HTML, CSS, NextJS and TypeScript.
 				</p>    
 			</section>
-			<Footer />
 		</>
 	);
 }

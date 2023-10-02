@@ -18,9 +18,8 @@ export default function Logo() {
 					src={ switchLogo() }
 					alt="Brand logo"
 					id="logo-img"
-				></img>
+				/>
 			</figure>
 		</ThemeSwitcher>
-
 	);
 }

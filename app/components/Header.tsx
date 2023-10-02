@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Logo from './Logo';
 
 export default function Header() {
-	const navMenu = ['Drawings','Projects','About'];
+	const navMenu = ['Drawings','Tattoos','About'];
 	return (
 		<>
 			<header className='block box-border my-6 text-center'>

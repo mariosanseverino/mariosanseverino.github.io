@@ -2,6 +2,6 @@ Mario's tattoo drawing library is under a forever enduring construction and upda
 
 The stack used here was NextJS, TypeScript and Tailwind CSS mainly.
 It is possible to access the deployment here:
-https://mariosanseverino-github-io.vercel.app/
+https://mariotattoo.vercel.app/
 
 Clicking the logo switch the page between dark and light mode. Also, clicking the images in the home page, expand the drawings.

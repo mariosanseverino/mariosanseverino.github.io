@@ -18,7 +18,7 @@ export default function Menu() {
 		<menu className='flex gap-4 text-md uppercase'>
 			{navMenu.map((menuItem, index) => (
 				<Link
-					className={ `px-2 transition-colors duration-500 ${ theme === 'dark' ? 'hover:bg-white hover:text-black' : 'hover:bg-black hover:text-white' }` }
+					className={ `px-2 transition-colors duration-300 ${ theme === 'dark' ? 'hover:bg-white hover:text-black' : 'hover:bg-black hover:text-white' }` }
 					href={ index > 0 ? `/${menuItem.toLowerCase()}` : '/' }
 					key={index}
 				>

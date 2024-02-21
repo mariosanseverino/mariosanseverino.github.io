@@ -1,11 +1,14 @@
 'use client';
 import React from 'react';
-import DrawingLibrary from './components/DrawingLibrary';
+
+import SheetSelector from './components/SheetSelector';
+import DrawingCard from './components/DrawingCard';
 
 export default function Home() {
 	return(
-		<div className='flex-col min-h-full'>
-			<DrawingLibrary />
-		</div>
+		<main className='flex flex-col gap-8'>
+			<SheetSelector />
+			<DrawingCard />
+		</main>
 	);
 }

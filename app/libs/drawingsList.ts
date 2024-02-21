@@ -1,43 +1,51 @@
-export const drawingsArray = [
+export const drawingsList = [
 	{
 		id: 0,
 		imageName: 'blood-knife',
-		description: 'Blood Knife'
+		description: 'Blood Knife',
+		sheet: 2
 	},
 	{
 		id: 1,
 		imageName: 'side-flames',
-		description: 'Side Flames'
+		description: 'Side Flames',
+		sheet: 4
 	},
 	{
 		id: 2,
 		imageName: 'reaper',
-		description: 'Reaper'
+		description: 'Reaper',
+		sheet: 2
 	},
 	{
 		id: 3,
 		imageName: 'coffin',
-		description: 'Coffin'
+		description: 'Coffin',
+		sheet: 4
 	},
 	{
 		id: 4,
 		imageName: 'ritual-of-skulls',
-		description: 'Ritual of Skulls'
+		description: 'Ritual of Skulls',
+		sheet: 2
 	},
 	{
 		id: 5,
 		imageName: 'horned-skull',
-		description: 'Horned Skull'
+		description: 'Horned Skull',
+		sheet: 2
 	},
 	{
 		id: 6,
 		imageName: 'skull-cowboy',
-		description: 'Skull cowboy'
+		description: 'Skull cowboy',
+		sheet: 2
 	},
 	{
 		id: 7,
 		imageName: 'blood-sword',
-		description: 'Blood sword'
+		description: 'Blood sword',
+		sheet: 4
 	},
 	{
 		id: 8,
@@ -47,32 +55,38 @@ export const drawingsArray = [
 	{
 		id: 9,
 		imageName: 'demon-hunter',
-		description: 'Demon hunter'
+		description: 'Demon hunter',
+		sheet: 2
 	},
 	{
 		id: 10,
 		imageName: 'dreaming',
-		description: 'Dreaming'
+		description: 'Dreaming',
+		sheet: 1
 	},
 	{
 		id: 11,
 		imageName: 'deadline',
-		description: 'Deadline'
+		description: 'Deadline',
+		sheet: 3
 	},
 	{
 		id: 12,
 		imageName: 'nature',
-		description: 'Nature'
+		description: 'Nature',
+		sheet: 1
 	},
 	{
 		id: 13,
 		imageName: 'charmer',
-		description: 'Charmer'
+		description: 'Charmer',
+		sheet: 1
 	},
 	{
 		id: 14,
 		imageName: 'sail',
-		description: 'Sail'
+		description: 'Sail',
+		sheet: 1
 	},
 	{
 		id: 15,
@@ -82,17 +96,20 @@ export const drawingsArray = [
 	{
 		id: 16,
 		imageName: 'heart-forging',
-		description: 'Heart forging'
+		description: 'Heart forging',
+		sheet: 1
 	},
 	{
 		id: 17,
 		imageName: 'ritual',
-		description: 'Ritual'
+		description: 'Ritual',
+		sheet: 4
 	},
 	{
 		id: 18,
 		imageName: 'cloak',
-		description: 'Cloak'
+		description: 'Cloak',
+		sheet: 4
 	},
 	{
 		id: 19,
@@ -107,7 +124,8 @@ export const drawingsArray = [
 	{
 		id: 21,
 		imageName: 'rose',
-		description: 'Rose'
+		description: 'Rose',
+		sheet: 1
 	},
 	{
 		id: 22,
@@ -122,6 +140,19 @@ export const drawingsArray = [
 	{
 		id: 24,
 		imageName: 'bird-of-paradise',
-		description: 'Bird of Paradise'
+		description: 'Bird of Paradise',
+		sheet: 3
+	},
+	{
+		id: 25,
+		imageName: 'nightbringer',
+		description: 'Nightbringer',
+		sheet: 3
+	},
+	{
+		id: 26,
+		imageName: 'book-of-lies',
+		description: 'Book of Lies',
+		sheet: 4
 	},
 ];

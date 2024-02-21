@@ -7,12 +7,12 @@ export default function About() {
 			<section className='w-80 mx-auto grid grid-cols-1 gap-y-4 md:w-[738px] md:grid-cols-2 md:gap-6 2xl:w-screen 2xl:grid-cols-4 2xl:gap-6 2xl:px-80'>
 				<figure className='order-1 items-center flex flex-col md:justify-self-end 2xl:justify-self-end'>
 					<img
-						src='images/author.jpg'
-						alt='Mario wearing a Whitney Houston T-shirt in a lavender light background'
+						src='images/tools.jpg'
+						alt='Mario&apos;s pen and tablet ready to draw'
 						className='w-80 rounded-t-lg md:w-72 2xl:w-72'
 					/>
 					<figcaption className='w-80 bg-black text-white py-2 text-center md:w-72 2xl:w-72'>
-						At home
+						Mario&apos;s drawing tools
 					</figcaption>
 				</figure>
 				<p className='text-justify order-2 w-80 md:w-72 2xl:w-72 2xl:justify-self-end'>

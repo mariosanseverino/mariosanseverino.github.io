@@ -9,7 +9,7 @@ export default function TattooCard({ name, date }: TattooProps) {
 			<img
 				src={ `/images/tattoos/${nameSpace}.jpg` }
 				alt={ `${nameSpace} tattoo photography, done in ${date}` }
-				className='grayscale transition duration-500 ease-in-out transform border-solid border-white hover:grayscale-0'
+				className='w-80 grayscale transition duration-500 ease-in-out transform rounded-xl hover:grayscale-0'
 			/>
 		</picture>
 	);

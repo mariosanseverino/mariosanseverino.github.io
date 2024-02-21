@@ -12,8 +12,10 @@ import { Props } from './components/ThemeSwitcher';
 export type DrawingsPropsTypes = {
 	drawingName: string,
 	zoomHidden: boolean,
+	currentSheet: number,
 	setDrawingName: Dispatch<SetStateAction<string>>,
 	setZoomHidden: Dispatch<SetStateAction<boolean>>,
+	setCurrentSheet: Dispatch<SetStateAction<number>>,
 }
 
 export const DrawingsContext = createContext({
@@ -23,12 +25,15 @@ export const DrawingsContext = createContext({
 export default function DrawingsProvider({ children } : Props) {
 	const [drawingName, setDrawingName] = useState('');
 	const [zoomHidden, setZoomHidden] = useState(false);
+	const [currentSheet, setCurrentSheet] = useState(1);
 	
 	const drawingZoomSettings = {
 		drawingName,
 		zoomHidden,
+		currentSheet,
 		setDrawingName,
 		setZoomHidden,
+		setCurrentSheet,
 	};
 	
 	return (

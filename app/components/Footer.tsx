@@ -8,8 +8,9 @@ export default function Footer() {
 	const darkTheme = theme === 'dark' ? '-dark' : '';
 
 	return(
-		<footer className='my-6 w-80 mx-auto text-center'>
-			<p>&copy; All content and website development made by Mário Sanseverino.</p>
+		<footer className='w-full flex flex-col justify-center text-center'>
+			<hr className={ `my-4 border-t-2 ${ theme === 'dark' ? 'border-white' : 'border-black' }` } />
+			<p className='mx-auto w-80'>&copy; All content and website development made by Mário Sanseverino.</p>
 			<section className='flex row mx-auto justify-center'>
 				{ socialMediaIcons.map((icon, index) => (
 					<a

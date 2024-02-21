@@ -1,29 +1,33 @@
 'use client';
 import React from 'react';
-import Link from 'next/link';
+import { useTheme } from 'next-themes';
 import Logo from './Logo';
+import Menu from './Menu';
+import { Raleway } from 'next/font/google';
+import ThemeSwitcher from './ThemeSwitcher';
+
+const raleway = Raleway({
+	weight: ['400'],
+	display: 'swap',
+	subsets: ['latin'],
+	variable: '--raleway'
+});
 
 export default function Header() {
-	const navMenu = ['Drawings','Tattoos','About'];
+	const { theme } = useTheme();
+	
 	return (
 		<>
-			<header className='block box-border my-6 text-center'>
-				<Logo />
-				<nav>
-					<ul>
-						{navMenu.map((menuItem, index) => (
-							<Link
-								className='inline-block font-semibold p-2'
-								href={ index > 0 ? `/${menuItem.toLowerCase()}` : '/' }
-								key={index}
-							>
-								{menuItem}
-							</Link>
-			
-						))}                 
-					</ul>
-				</nav>
+			<header className={ `flex items-center justify-center ${ raleway.className }` }>
+				<div className='flex items-center gap-4'>
+					<Logo />
+					{/* <ThemeSwitcher>
+						<p className='font-semibold'>s</p>
+					</ThemeSwitcher> */}
+				</div>
+				{/* <Menu /> */}
 			</header>
+			<hr className={ `my-4 border-t-2 ${ theme === 'dark' ? 'border-white' : 'border-black' }` } />
 		</>
 	);
 }

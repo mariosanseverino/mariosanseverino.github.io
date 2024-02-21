@@ -15,10 +15,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
 	return (
-		<html lang="en">
+		<html lang='en'>
 			<Providers>
-				<body>
+				<body className='flex flex-col gap-4 px-6 py-6 transition-colors duration-1000'>
 					<Header />
 					{children}
 					<Footer />

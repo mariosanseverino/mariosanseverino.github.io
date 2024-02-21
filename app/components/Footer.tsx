@@ -16,8 +16,8 @@ export default function Footer() {
 	const darkTheme = theme === 'dark' ? '-dark' : '';
 
 	return(
-		<footer className={ `w-full flex flex-col justify-center gap-4 text-center text-sm ${ raleway.className }` }>
-			<hr className={ `my-4 border-t-2 ${ theme === 'dark' ? 'border-white' : 'border-black' }` } />
+		<footer className={ `w-full flex flex-col justify-center gap-8 text-center text-sm ${ raleway.className }` }>
+			<hr className={ `border-t-2 ${ theme === 'dark' ? 'border-white' : 'border-black' }` } />
 			<p className='mx-auto w-80'>&copy; All content and website development made by Mário Sanseverino.</p>
 			<section className='flex row mx-auto justify-center gap-4'>
 				{ socialMediaIcons.map((icon, index) => (

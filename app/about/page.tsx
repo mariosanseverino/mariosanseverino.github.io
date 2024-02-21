@@ -1,15 +1,17 @@
 'use client';
 import React from 'react';
+import { unifraktur, mohave } from '../components/Menu';
 
 export default function About() {
 	return (
 		<>
+			<h1 className={ `uppercase text-center text-6xl md:text-9xl ${ mohave.className }` }><span className={ unifraktur.className }>A</span>bout</h1>
 			<section className='w-80 mx-auto grid grid-cols-1 gap-y-4 md:w-[738px] md:grid-cols-2 md:gap-6 2xl:w-screen 2xl:grid-cols-4 2xl:gap-6 2xl:px-80'>
 				<figure className='order-1 items-center flex flex-col md:justify-self-end 2xl:justify-self-end'>
 					<img
 						src='images/tattooing.jpg'
 						alt='Mário tattoing in his house, wearing a white cap backwards'
-						className='w-80 mx-auto rounded-t-lg md:w-72 2xl:w-72'
+						className='w-80 rounded-t-lg md:w-72 2xl:w-72'
 					/>
 					<figcaption className='w-80 bg-black text-white py-2 text-center md:w-72 2xl:w-72'>
 						Mario tattoing

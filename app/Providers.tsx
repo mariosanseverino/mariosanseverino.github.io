@@ -7,7 +7,6 @@ import React, {
 	SetStateAction
 } from 'react';
 import { ThemeProvider } from 'next-themes';
-import { Props } from './components/ThemeSwitcher';
 
 export type DrawingsPropsTypes = {
 	drawingName: string,
@@ -22,7 +21,7 @@ export const DrawingsContext = createContext({
 	drawingName: '', zoomHidden: false
 } as DrawingsPropsTypes);
 
-export default function DrawingsProvider({ children } : Props) {
+export default function DrawingsProvider({ children }: { children: React.ReactNode }) {
 	const [drawingName, setDrawingName] = useState('');
 	const [zoomHidden, setZoomHidden] = useState(false);
 	const [currentSheet, setCurrentSheet] = useState(1);
@@ -38,7 +37,7 @@ export default function DrawingsProvider({ children } : Props) {
 	
 	return (
 		<DrawingsContext.Provider value={ drawingZoomSettings }>
-			<ThemeProvider themes={['dark', 'light']} attribute='class'>
+			<ThemeProvider themes={['light', 'dark']} attribute='class'>
 				{ children }
 			</ThemeProvider>
 		</DrawingsContext.Provider>

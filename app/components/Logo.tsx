@@ -13,7 +13,7 @@ export default function Logo() {
 	return (
 		<Link href='/'>
 			<img
-				className='w-20 rounded-full transition hover:scale-95'
+				className='w-20 rounded-full transition-all duration-300 hover:scale-95'
 				src={ switchLogo() }
 				alt="Brand logo"
 				id="logo-img"

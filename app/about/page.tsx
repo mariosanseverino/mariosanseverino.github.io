@@ -7,12 +7,12 @@ export default function About() {
 			<section className='w-80 mx-auto grid grid-cols-1 gap-y-4 md:w-[738px] md:grid-cols-2 md:gap-6 2xl:w-screen 2xl:grid-cols-4 2xl:gap-6 2xl:px-80'>
 				<figure className='order-1 items-center flex flex-col md:justify-self-end 2xl:justify-self-end'>
 					<img
-						src='images/tools.jpg'
-						alt='Mario&apos;s pen and tablet ready to draw'
-						className='w-80 rounded-t-lg md:w-72 2xl:w-72'
+						src='images/tattooing.jpg'
+						alt='Mário tattoing in his house, wearing a white cap backwards'
+						className='w-80 mx-auto rounded-t-lg md:w-72 2xl:w-72'
 					/>
 					<figcaption className='w-80 bg-black text-white py-2 text-center md:w-72 2xl:w-72'>
-						Mario&apos;s drawing tools
+						Mario tattoing
 					</figcaption>
 				</figure>
 				<p className='text-justify order-2 w-80 md:w-72 2xl:w-72 2xl:justify-self-end'>
@@ -23,12 +23,12 @@ export default function About() {
 				</p>
 				<figure className='order-3 flex flex-col items-center md:justify-self-start md:order-4 2xl:justify-self-start'>
 					<img
-						src='images/tattooing.jpg'
-						alt='Mário tattoing in his house, wearing a white cap backwards'
-						className='w-80 mx-auto rounded-t-lg md:w-72 2xl:w-72'
+						src='images/tools.jpg'
+						alt='Mario&apos;s pen and tablet ready to draw'
+						className='w-80 rounded-t-lg md:w-72 2xl:w-72'
 					/>
 					<figcaption className='w-80 bg-black text-white py-2 text-center md:w-72 2xl:w-72'>
-                        Tattooing
+						Mario&apos;s drawing tools
 					</figcaption>
 				</figure>
 			</section>

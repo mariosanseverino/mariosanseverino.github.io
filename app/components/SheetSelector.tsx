@@ -6,10 +6,10 @@ export default function SheetSelector() {
 	const { currentSheet, setCurrentSheet } = useDrawingsContext();
 
 	return (
-		<ul className='w-full h-16 flex gap-4 items-center justify-between'>
+		<ul className='w-full h-16 flex gap-4 items-center justify-between md:justify-center md:gap-8'>
 			{ flashSheets.map((sheet, index) => (
 				<img src={ `/images/drawings/${sheet}.png` }
-					className={ `w-16 transition-opacity duration-300 ${currentSheet === index + 1 ? 'opacity-100' : 'opacity-20' }` }
+					className={ `w-16 transition-opacity duration-300 ${currentSheet === index + 1 ? 'opacity-100' : 'opacity-20' } cursor-pointer` }
 					alt='Flash sheet'
 					key={ index }
 					onClick={ () => setCurrentSheet(index + 1) } />

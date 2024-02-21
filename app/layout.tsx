@@ -19,7 +19,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<Providers>
-				<body className='flex flex-col gap-4 px-6 py-6 transition-colors duration-1000'>
+				<body className='flex flex-col gap-4 px-6 py-6 transition-colors duration-1000 lg:px-60'>
 					<Header />
 					{children}
 					<Footer />

@@ -18,16 +18,15 @@ export default function Header() {
 	
 	return (
 		<>
-			<header className={ `flex items-center justify-center ${ raleway.className }` }>
+			<header className={ `flex flex-col gap-4 items-center justify-center ${ raleway.className } relative` }>
 				<div className='flex items-center gap-4'>
-					<Logo />
-					{/* <ThemeSwitcher>
-						<p className='font-semibold'>s</p>
-					</ThemeSwitcher> */}
+					<ThemeSwitcher>
+						<Logo />
+					</ThemeSwitcher>
 				</div>
-				{/* <Menu /> */}
+				<Menu />
 			</header>
-			<hr className={ `my-4 border-t-2 ${ theme === 'dark' ? 'border-white' : 'border-black' }` } />
+			<hr className={ `border-t-2 ${ theme === 'dark' ? 'border-white' : 'border-black' }` } />
 		</>
 	);
 }

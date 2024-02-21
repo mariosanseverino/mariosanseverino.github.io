@@ -37,7 +37,7 @@ export default function DrawingsProvider({ children }: { children: React.ReactNo
 	
 	return (
 		<DrawingsContext.Provider value={ drawingZoomSettings }>
-			<ThemeProvider themes={['light', 'dark']} attribute='class'>
+			<ThemeProvider themes={['dark', 'light']} attribute='class'>
 				{ children }
 			</ThemeProvider>
 		</DrawingsContext.Provider>

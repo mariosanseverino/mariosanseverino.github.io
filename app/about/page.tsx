@@ -6,7 +6,7 @@ export default function About() {
 	return (
 		<>
 			<h1 className={ `uppercase text-center text-6xl md:text-9xl ${ mohave.className }` }><span className={ unifraktur.className }>A</span>bout</h1>
-			<section className='w-80 mx-auto grid grid-cols-1 gap-y-4 md:w-[738px] md:grid-cols-2 md:gap-6 2xl:w-screen 2xl:grid-cols-4 2xl:gap-6 2xl:px-80'>
+			<section className='w-80 mx-auto grid grid-cols-1 gap-y-4 md:w-[738px] md:grid-cols-2 md:gap-6 2xl:w-full 2xl:grid-cols-4 2xl:gap-6'>
 				<figure className='order-1 items-center flex flex-col md:justify-self-end 2xl:justify-self-end'>
 					<img
 						src='images/tattooing.jpg'
